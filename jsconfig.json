@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "checkJs": true
+    },
+    "include": [
+        "programmes/*/*",
+        "typing/*"
+    ]
+}

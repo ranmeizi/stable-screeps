@@ -1,0 +1,17 @@
+{
+  "name": "stable-screeps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "boboan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.17.4",
+    "@types/screeps": "^3.3.8",
+    "lodash": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "screeps-server-mockup": "^1.5.1"
+  },
+  "scripts": {
+    "load":"node utils/loadModules"
+  }
+}
