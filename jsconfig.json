@@ -4,7 +4,9 @@
         "checkJs": true
     },
     "include": [
+        "utils/*",
         "programmes/*/*",
-        "typing/*"
+        "typing/*",
+        "typing/**/*",
     ]
 }

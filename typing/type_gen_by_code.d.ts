@@ -1,0 +1,1 @@
+declare type PROGRAMME_VERSSIONS = 'v0.0.1'
