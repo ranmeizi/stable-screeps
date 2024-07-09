@@ -1,0 +1,3 @@
+type CreepMemory = {
+    role: string
+}

@@ -18,7 +18,7 @@ function loadModule(programme_name) {
     fs.readdirSync(programmeDir).forEach(entry => {
         const value = fs.readFileSync(path.join(programmeDir, entry), 'utf8')
 
-        modules[entry] = value
+        modules[path.parse(entry).name] = value
     })
 
     return modules

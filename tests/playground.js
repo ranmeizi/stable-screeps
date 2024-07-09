@@ -1,7 +1,7 @@
 (async function () {
     const _ = require('lodash');
     const { ScreepsServer, TerrainMatrix } = require('screeps-server-mockup');
-    const loadModule = require('../../utils/load_modules')
+    const loadModule = require('../utils/load_modules')
 
     const server = new ScreepsServer();
 
@@ -22,8 +22,10 @@
         await server.world.addRoomObject('W0N1', 'mineral', 40, 40, { mineralType: 'H', density: 3, mineralAmount: 3000 });
 
         // Add a bot in W0N1
-        const modules = loadModule('v0.0.1')
+        const modules = loadModule('playground')
         const bot = await server.world.addBot({ username: 'bot', room: 'W0N1', spawnName: '快乐老家', x: 25, y: 25, modules });
+
+        // 创建一个自己的 creep
 
         // Print console logs every tick
         bot.on('console', (logs, results, userid, username) => {
@@ -32,7 +34,7 @@
 
         // Start server and run several ticks
         await server.start();
-        for (let i = 0; i < 10; i += 1) {
+        for (let i = 0; i < 1502; i += 1) {
             console.log('[tick]', await server.world.gameTime);
             await server.tick();
             _.each(await bot.newNotifications, ({ message }) => console.log('[notification]', message));

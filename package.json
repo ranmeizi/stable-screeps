@@ -13,5 +13,8 @@
     "screeps-server-mockup": "^1.5.1",
     "version_gen":"1.0.0"
   },
-  "workspaces":["packages/*"]
+  "workspaces":["packages/*"],
+  "scripts": {
+    "playground":"node tests/playground.js"
+  }
 }

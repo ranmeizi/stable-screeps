@@ -1,3 +1,7 @@
+const Framwork = require('./framwork')
+
 module.exports.loop = function () {
-    console.log('I am a loop function')
+
+    Framwork.run()
+    
 }

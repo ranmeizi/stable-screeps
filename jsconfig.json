@@ -6,7 +6,6 @@
     "include": [
         "utils/*",
         "programmes/*/*",
-        "typing/*",
-        "typing/**/*",
+        "typing/v0.0.1/**/*"
     ]
 }
